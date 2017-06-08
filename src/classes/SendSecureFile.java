@@ -14,6 +14,10 @@ import java.security.*;
  * Created by Zujiry on 31/05/2017.
  */
 public class SendSecureFile {
+    public static void main(String[] args){
+
+    }
+
     public SendSecureFile(String privKeyFile, String pubKeyFile, String input, String output){
         PrivateKey priv = null;
         PublicKey pub = null;
