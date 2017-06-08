@@ -15,7 +15,17 @@ import java.security.*;
  */
 public class SendSecureFile {
     public static void main(String[] args){
+        if(args.length != 4) {
+            System.out.println("Usage: SendSecureFile <Name of private key file> <Name of public key file> <File to encrypt> <Output file>");
 
+        }
+
+        String privKeyFile = args[0];
+        String pubKeyFile = args[1];
+        String input = args[2];
+        String output = args[3];
+
+        new SendSecureFile(privKeyFile,pubKeyFile,input,output);
     }
 
     public SendSecureFile(String privKeyFile, String pubKeyFile, String input, String output){

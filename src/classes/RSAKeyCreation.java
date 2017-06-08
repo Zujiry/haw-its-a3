@@ -7,6 +7,15 @@ import java.security.*;
  * Created by Zujiry on 31/05/2017.
  */
 public class RSAKeyCreation {
+    public static void main(String args[]){
+        if(args.length != 1) {
+            System.out.println("Usage: RSAKeyCreation <Wanted name for the key files>");
+        }
+
+        String filename = args[0];
+        new RSAKeyCreation(filename);
+    }
+
     private File publicKey;
     private File privateKey;
 
